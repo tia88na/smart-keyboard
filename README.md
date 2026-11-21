@@ -142,12 +142,6 @@ Open `c_gpt2_finetune.ipynb` in **Google Colab** with a GPU runtime and run all 
   shapes the vocabulary.
 - Quantization trades some accuracy (perplexity 83→129) for a smaller, faster model.
 
----
-
-## 🤖 AI usage
-
-An AI coding assistant was used for scaffolding, debugging and environment fixes. Every
-reported number comes from our own runs. See the AI Usage slide for details.
 
 ---
 
