@@ -104,9 +104,10 @@ pip install torch transformers nltk tokenizers gradio
 
 ### Run the keyboard
 ```bash
-python model_a.py        # train the neural LM once (creates model_a_ffn.pt for the app)
 python app.py            # launch the keyboard; open http://127.0.0.1:7860
 ```
+> On the first run `app.py` auto-trains the neural LM (creates `model_a_ffn.pt`) and
+> downloads the fine-tuned GPT-2 — so a single command starts everything.
 
 ### Reproduce the results
 ```bash
