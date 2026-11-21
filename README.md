@@ -16,6 +16,8 @@ and size.
 
 > SWE015 — Introduction to Large Language Models · Use Case 5 (Smart Keyboard)
 
+**🔗 Live demo:** https://huggingface.co/spaces/tia88na/smart-keyboard
+
 ---
 
 ## ✨ Features
