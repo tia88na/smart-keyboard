@@ -8,6 +8,7 @@ response time: the classical n-gram, the feedforward neural LM, and the quantize
     python app.py
 Then open the local URL it prints (http://127.0.0.1:7860).
 """
+import os
 import re
 import time
 from collections import defaultdict, Counter
@@ -60,6 +61,10 @@ class FFLM(nn.Module):
 
 
 ffn = None
+if not os.path.exists("model_a_ffn.pt"):
+    print("model_a_ffn.pt not found — training the neural LM once (first run only)...")
+    import model_a
+    model_a.main()
 try:
     print("Loading feedforward neural LM...")
     ck = torch.load("model_a_ffn.pt", map_location="cpu")
